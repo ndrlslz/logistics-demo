@@ -1,0 +1,20 @@
+#! /bin/bash
+set -e
+
+env=${1:-dev}
+tag=$GO_PIPELINE_LABEL
+
+project="b2b"
+repository="intelligent-logistics-demo"
+namespace="$project-$env"
+releaseName="$repository-$env"
+
+imageRepository="twshell.azurecr.cn/b2b/intelligent-logistics-demo-$env"
+echo $imageRepository
+export KUBECONFIG=/kube-config/tw-dev-aks
+hostname="b2b-$env.digitalshell.com.cn"
+helm upgrade $releaseName ./charts -n $namespace -i --wait --timeout 30s \
+    --create-namespace --history-max=3 --set image.tag=$tag \
+    --set image.repository=$imageRepository \
+    --set ingress.tls\[0\].hosts\[0\]=$hostname --set ingress.hosts\[0\].host=$hostname \
+    --set ingress.hosts\[0\].paths\[0\].path="/iiot/(.*)" --set ingress.hosts\[0\].paths\[0\].pathType="ImplementationSpecific"

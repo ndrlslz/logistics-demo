@@ -1,0 +1,119 @@
+// UX deliverable assumption
+$sm-screen: 1366px;
+$base-screen: 1440px;
+$md-screen: 1280px;
+$lg-screen: 1920px;
+
+// Base
+$color-breadcrumb: #222;
+$color-base: #333;
+$color-primary: #4B7FF0; // Primary
+$color-secondary: #FFB716; // Secondary
+
+$color-very-dark-blue: #001930;
+$color-dark-blue: #003c88;
+$color-shell-map-background: #083261;
+$color-shell-dark-background: #021732;
+$color-shell-mid-blue: #009eb4;
+$color-shell-blue-text: #4b98e5;
+$color-shell-light-blue: #00fdff;
+$color-shell-pale-blue: #c8e4ff;
+
+$color-shell-light-green: #7bd6c7;
+$color-shell-red: #d85961;
+$color-shell-pale-red: #f7dedf;
+$color-shell-mid-grey: #7f7f7f; // PrimaryGreyColor
+$color-shell-grey: #afaca2;
+
+$color-warning: #DF3F2A; // Warning
+$color-success: #42CB83; // TipsSucced
+
+$color-shell-yellow: #FFD500; // ShellYellow
+
+$color-hover: #ffe666;
+$color-active: #f0c800;
+$color-dark-yellow: #ffa600; // StarFill
+
+$color-shell-orange: #ed8b00;
+
+$color-line: #E5E5E5; // Line
+$color-bg: #F4F6FA; // BgColor
+$color-table-bg: #eeeeee;
+
+// Font color
+$color-title: #333333; // TextTitle
+$color-description: #666666; // TextDescription
+$color-tip: #999999; // TextTips
+$color-border: #cccccc;
+
+// new design colors
+$color-white: #fff;
+$color-light-grey: #a6a6a6;
+$color-pale-blue: #f1f5fb;
+$color-light-blue: #009eb4;
+$color-blue: #073577;
+$color-pale-grey: #d9d9d9;
+$color-pale-black: #404040; // PrimaryFontColor
+$color-dark-black: #242a42;
+$color-warn: #dd1d21;
+$color-abnormal: #ff9200;
+$color-text-abnormal: #cf6700;
+$color-bg-warn: rgba(221, 29, 33, 0.2);
+$color-bg-warn-msg: rgba(221, 29, 33, 0.1);
+$color-bg-abnormal: rgba(255, 146, 0, 0.2);
+$color-bg-dark: rgba(0, 0, 0, 0.4);
+$color-bg-green: #e8f2ec;
+$color-shell-pale-yellow: #fbce07;
+$color-green: #008443;
+$color-shell-hover-yellow:rgba(251, 206, 7, 0.6);
+$color-dark-warn: #e84b3a;
+$color-bg-white: rgba(255, 255, 255, 0.1);
+
+$base-shadow-box: 0 2px 30px 0 rgba(0, 0, 0, 0.08);
+$list-shadow-box: 0 2px 30px 0 rgba(0, 0, 0, 0.1);
+$bottom-shadow-box: 0 8px 8px -8px rgba(0, 0, 0, 0.08);
+
+// Font size
+$xs-font-size: 10rem/14;
+$sm-font-size: 12rem/14;
+$base-font-size: 1rem;  // PrimaryFontSize
+$md-font-size: 16rem/14; // PrimaryTitleSize
+$lg-font-size: 18rem/14;
+$xl-font-size: 20rem/14;
+$xxl-font-size: 24rem/14;
+
+$sm-line-height: 12rem/14;
+$base-line-height: 1rem;
+$md-line-height: 16rem/14;
+$lg-line-height: 18rem/14;
+$xl-line-height: 20rem/14;
+$xxl-line-height: 24rem/14;
+
+$base-gap: 8rem/14;
+$double-gap: $base-gap * 2;
+$triple-gap: $base-gap * 3;
+$quad-gap: $base-gap * 4;
+$float-frame-height: calc(100vh - 5.4rem * 2 - 4.4rem * 2 - #{$double-gap});
+$float-frame-height-without-footer: calc(100vh - 5.4rem - 4.4rem * 2 - #{$double-gap} * 2);
+
+// 搜索项宽度
+$xs-width: 110px;
+$sm-width: 130px;
+$md-width: 250px;
+$lg-width: 280px;
+$xl-width: 300px;
+
+// icon-size
+$primary-icon-size: 20px;
+$input-prefix-icon-size: 16px;
+$input-suffix-icon-size: 14px;
+
+// input-height btn-height
+$primary-height: calc(38rem / 14);
+
+// z-index
+$fixed-table-header-z-index: 1;
+$page-header-z-index: 2;
+$tree-selector-popover-z-index: 10;
+
+$page-header-height: 64rem/14;

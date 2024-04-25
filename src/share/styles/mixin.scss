@@ -1,0 +1,85 @@
+@import './variable';
+
+@mixin header-text-1 {
+  font-size: $xxl-font-size;
+  color: $color-warning;
+  line-height: 32/24 * 1em;
+}
+
+@mixin header-text-2 {
+  font-size: $xl-font-size;
+  color: $color-title;
+  line-height: 28/20 * 1em;
+}
+
+@mixin header-text-3 {
+  font-size: $md-font-size;
+  color: $color-title;
+  line-height: 24/16 * 1em;
+}
+
+// 通用页面文字
+@mixin text-normal() {
+  font-size: $base-font-size;
+  font-weight: normal;
+  color: $color-pale-black;
+  line-height: 22/14 * 1rem;
+}
+
+// 页面标题文字
+@mixin text-title() {
+  font-size: $md-font-size;
+  font-weight: normal;
+  color: $color-pale-black;
+  line-height: 24/16 * 1rem;
+}
+
+// 浅色注释文字
+@mixin text-annotation() {
+  font-size: $base-font-size;
+  font-weight: normal;
+  color: $color-shell-mid-grey;
+  line-height: 22/14 * 1rem;
+}
+
+@mixin text-small {
+  font-size: $sm-font-size;
+  font-weight: normal;
+  color: $color-tip;
+  line-height: 20/12 * 1em;
+}
+
+@mixin ellipsis-text() {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@mixin flex-center() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-start() {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@mixin absolute-center() {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin scroll-container() {
+  overflow: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

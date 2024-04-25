@@ -1,0 +1,15 @@
+#! /bin/bash
+set -e
+repository=twshell.azurecr.cn
+yarn_image=node:12.22.1-alpine
+
+tag=${GO_PIPELINE_LABEL:-local}
+app_image=${repository}/b2b/iot-toolbox-demo-dev:${tag}
+
+docker run --rm -e "NODE_ENV=dev" -v $(pwd):/app -v /tmp/frontend_yarn:/yarn -v /tmp/frontend_modules:/app/node_modules -w /app ${yarn_image} sh build.sh $tag
+
+echo $app_image
+
+docker build --build-arg dist=dev_dist -t ${app_image} .
+docker push ${app_image}
+docker rmi ${app_image}
