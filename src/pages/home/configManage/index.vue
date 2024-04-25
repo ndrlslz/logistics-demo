@@ -1,6 +1,6 @@
 <template>
   <div class="config-manage">
-    configManage
+    configManage page
   </div>
 </template>
 
