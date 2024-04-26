@@ -261,7 +261,9 @@
       goToPage () {},
       goToDeviceMapPage () {},
       goToEditDevicePage () {},
-      goToDeviceDetailPage () {},
+      goToDeviceDetailPage (id) {
+        this.$router.push(`/equipment/${id}`)
+      },
       goToAddDevicePage () {},
       exportData () {},
       handleDatePickerChange () {},

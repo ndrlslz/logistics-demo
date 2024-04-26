@@ -16,6 +16,11 @@ const homeRouter = [
         component: () => import('../../pages/home/equipmentManage'),
       },
       {
+        name: 'equipmentDetail',
+        path: '/equipment/:id',
+        component: () => import('../../pages/home/equipmentManage/detail'),
+      },
+      {
         name: 'carManage',
         path: '/carManage',
         component: () => import('../../pages/home/carManage'),
