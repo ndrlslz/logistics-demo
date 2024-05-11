@@ -2,7 +2,7 @@
   <div class="sh-side-bar">
     <div class="icon-bar">
       <template>
-        <img class="logo" src="@/share/assets/images/logo.png" @click="goToHome" />
+        <img class="logo" src="@/share/assets/images/logo1.png" @click="goToHome" />
         <ul>
           <li
             :class="{ active: isActiveRoute(menu) }"
@@ -57,10 +57,7 @@
     </div>
     <transition name="fade" mode="out-in" :duration="1.8">
       <div class="title-bar" v-if="!isCollapse">
-        <img
-          class="logo"
-          src="@/share/assets/images/company-name.jpeg"
-        />
+        <div class="logo">捷速智运</div>
         <ul>
           <li
             :class="{ active: isActiveRoute(menu) }"
@@ -449,6 +446,10 @@
     .logo {
       width: 85%;
       height: 50px;
+      line-height: 50px;
+      font-size: 26px;
+      font-weight: bold;
+      color: #1296db;
     }
   }
 }
